@@ -9,16 +9,27 @@ body{
     justify-content: space-between;
     margin: 0 50px;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 .logo{
     background-image: url(/Phanny-Brand/img/logo.png);
     width: 32px;
     height: 37px;
+}
+.socials{
+    width: 300px;
 }
 #zero{
     margin-left: 10px;
 }
 .menu{
     display: flex;
+}
+.menu-small{
+    display: flex;
+    display: none;
 }
 .lines{
     background-image: url(/Phanny-Brand/img/lines.png);
@@ -118,6 +129,19 @@ p{
         margin: 0 5px;
     }
 }
+@media screen and (max-width: 750px) {
+    .menu{
+        display: none;
+    }
+    .menu-small{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }.socials{
+        width: 200px;
+    }
+}
 @media screen and (max-width: 500px) {
     #pic-bg{
         background-image: url(/Phanny-Brand/img/IMG_4160\ 1.png);
@@ -130,7 +154,5 @@ p{
     #small-pic{
         display: none;
     }
-    .logo{
-        display: none;
-    }
+    
 }
