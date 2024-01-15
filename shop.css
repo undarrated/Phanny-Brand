@@ -1,0 +1,130 @@
+body {
+    padding: 20px;
+  }
+  
+  header {
+    position: fixed; /* Keep header at the top */
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    transition: all 0.4s ease-in-out; /* Smooth animation */
+    height: 50px;
+    background-color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    letter-spacing: 40px;
+    font-size: 100px;
+    transition: font-size 0.4s ease-in-out; /* Font size transition */
+  }
+  
+  /* Shrink the logo when scrolled */
+  header.small h1 {
+    font-size: 30px;
+  }
+  .section{
+    width: 100%;
+    text-align: center;
+  }
+  video{
+    margin-top: 100px;
+  }
+  #two-piece{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin:  50px auto;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+    
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .see{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+  }
+  #box{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  h2{
+    text-align: center;
+    margin-bottom: -20px;
+  }
+  .za{
+    background-image: url(/Phanny-Brand/img/zaa.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za1{
+    background-image: url(/Phanny-Brand/img/zaa1.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za2{
+    background-image: url(/Phanny-Brand/img/zaa2.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za3{
+    background-image: url(/Phanny-Brand/img/zaa3.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za4{
+    background-image: url(/Phanny-Brand/img/zaa4.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za5{
+    background-image: url(/Phanny-Brand/img/zaa5.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za6{
+    background-image: url(/Phanny-Brand/img/zaa6.png);
+    width: 300px;
+    height: 400px;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    video{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    header h1 {
+      font-size: 60px;
+    }
+    video{
+      margin-top: 50px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    header h1 {
+      font-size: 40px;
+
+    }
+    header.small h1 {
+      font-size: 20px;
+    }
+    video{
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    video{
+      width: 300px;
+    }
+  }

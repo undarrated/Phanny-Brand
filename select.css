@@ -1,0 +1,11 @@
+body {
+    padding: 0 100px;
+  }
+  header{
+    display: flex;
+  }
+  #img{
+    background-image: url(/Phanny-Brand/img/jj.png);
+    width: 561px;
+    height: 595px;
+  }
