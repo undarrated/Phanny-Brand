@@ -97,6 +97,49 @@ body {
     height: 400px;
   }
 
+  #logoo{
+    background-image: url(/Phanny-Brand/img/lo.png);
+    width: 41px;
+    height: 47px;
+    margin: auto;
+  }
+  footer{
+  background-image: url(/Phanny-Brand/img/f1.png);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  color: white;
+  margin-bottom: -10px;
+  margin-top: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #social{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    margin: auto;
+    width: 100%;
+  }
+  #socials{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    margin: auto;
+    width: 200px;
+    color:#666666;
+  }
+  #fade{
+    color: #525252;
+  }
+  #line{
+    width: 500px;
+    background-color: #2A2A2A;
+    height: 1px;
+    border: none;
+    margin-top: 20px;
+  }
+
 
   @media screen and (max-width: 900px) {
     video{
@@ -128,3 +171,12 @@ body {
       width: 300px;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    #line{
+      width: 250px;
+    }
+    #fade{
+      display: none;
+    }
+  } 
