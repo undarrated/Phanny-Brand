@@ -1,11 +1,240 @@
 body {
     padding: 0 100px;
+    color: #2A2A2A;
   }
   header{
     display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
   }
+  
   #img{
     background-image: url(/Phanny-Brand/img/jj.png);
     width: 561px;
     height: 595px;
+  }
+  main{
+    position: fixed; /* Keep header at the top */
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+  }
+  h1{
+    text-align: center;
+    letter-spacing: 40px;
+  }
+  h2{
+    font-size: 32px;
+    color: #2A2A2A;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  }
+  #No{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100px;
+  }
+  #description{
+    width: 550px;
+    align-self: center;
+    height: 500px;
+    margin-top: 50px;
+  }
+  #text{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .desc{
+    margin-right: 20px;
+  }
+  #size{
+    padding: 15px;
+    border: 1px solid #3131319d;
+  }
+  #size:hover{
+    background-color: #2A2A2A;
+    color: white;
+  }
+  h5{
+    font-size: 20px;
+    color: #3131319d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #two-piece{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin:  10px auto;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+    
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h4{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #box{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .za{
+    background-image: url(/Phanny-Brand/img/zaa.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za1{
+    background-image: url(/Phanny-Brand/img/zaa1.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za2{
+    background-image: url(/Phanny-Brand/img/zaa2.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za3{
+    background-image: url(/Phanny-Brand/img/zaa3.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za4{
+    background-image: url(/Phanny-Brand/img/zaa4.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za5{
+    background-image: url(/Phanny-Brand/img/zaa5.png);
+    width: 300px;
+    height: 400px;
+  }
+  .za6{
+    background-image: url(/Phanny-Brand/img/zaa6.png);
+    width: 300px;
+    height: 400px;
+  }
+  
+  
+  #logo{
+    background-image: url(/Phanny-Brand/img/lo.png);
+    width: 41px;
+    height: 47px;
+    margin: auto;
+  }
+  footer{
+  background-image: url(/Phanny-Brand/img/f1.png);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250px;
+  color: white;
+  margin-bottom: -10px;
+  margin-top: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #social{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    margin: auto;
+    width: 100%;
+  }
+  #socials{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    margin: auto;
+    width: 200px;
+    color:#666666;
+  }
+  #fade{
+    color: #525252;
+  }
+  #line{
+    width: 500px;
+    background-color: #2A2A2A;
+    height: 1px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    body{
+      padding: 0 5px;
+    }
+    #img{
+      margin: auto;
+    }
+    #description{
+      margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    #img{
+      background-image: url(/Phanny-Brand/img/miniIMG.png);
+      width: 287px;
+      height: 305px;
+    }
+    h2{
+      font-size: 20px;
+      text-align: center;
+    }
+    #No{
+      font-size: 20px;
+      text-align: center;
+    }
+    #text{
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+    }
+    h4{
+      margin-top: 100px;
+    }
+    h1{
+      font-size: 20px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #line{
+      width: 250px;
+    }
+    #fade{
+      display: none;
+    }
+
+  }
+  @media screen and (max-width: 370px) {
+    h4{
+      margin-top: 200px;
+    }
+    h1{
+      font-size: 15px;
+    }
+    main{
+      text-align: center;
+    }
+
   }
