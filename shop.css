@@ -4,7 +4,6 @@ body {
   
   header {
     position: fixed; /* Keep header at the top */
-    text-align: center;
     top: 0;
     left: 0;
     z-index: 10;
@@ -12,13 +11,26 @@ body {
     transition: all 0.4s ease-in-out; /* Smooth animation */
     height: 50px;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
   }
-  
+  #menu{
+    display: flex;
+    padding: 20px;
+}
+#space{
+  margin-left: 20px;
+}
   header h1 {
     margin: 0;
+    padding: 10px;
     letter-spacing: 40px;
     font-size: 100px;
     transition: font-size 0.4s ease-in-out; /* Font size transition */
+  }
+  a{
+    text-decoration: none;
+    color: black;
   }
   
   /* Shrink the logo when scrolled */
@@ -157,7 +169,7 @@ body {
   @media screen and (max-width: 500px) {
     header h1 {
       font-size: 40px;
-
+      letter-spacing: 20px;
     }
     header.small h1 {
       font-size: 20px;
@@ -165,18 +177,24 @@ body {
     video{
       margin-top: 30px;
     }
-  }
-  @media screen and (max-width: 500px) {
-    video{
-      width: 300px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
     #line{
       width: 250px;
     }
     #fade{
       display: none;
     }
-  } 
+    video{
+      width: 300px;
+    }
+    #social{
+      flex-direction: column;
+      text-align: center;
+    }
+    body{
+      padding: 0 1px;
+    }
+    #menu{
+      margin: 0;
+    }
+  }
+  
