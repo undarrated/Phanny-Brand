@@ -1,54 +1,77 @@
 body {
-    padding: 20px;
+    padding: 0 100px;
+    color: #2A2A2A;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
   }
   
-  header {
+  #img{
+    background-image: url(/Phanny-Brand/img/jj.png);
+    width: 561px;
+    height: 595px;
+  }
+  main{
     position: fixed; /* Keep header at the top */
+    text-align: center;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100%;
-    transition: all 0.4s ease-in-out; /* Smooth animation */
-    height: 50px;
+    height: 60px;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
   }
-  #menu{
-    display: flex;
-    padding: 20px;
-}
-#space{
-  margin-left: 20px;
-}
-  header h1 {
-    margin: 0;
-    padding: 10px;
-    letter-spacing: 40px;
-    font-size: 100px;
-    transition: font-size 0.4s ease-in-out; /* Font size transition */
-  }
-  a{
-    text-decoration: none;
-    color: black;
-  }
-  
-  /* Shrink the logo when scrolled */
-  header.small h1 {
-    font-size: 30px;
-  }
-  .section{
-    width: 100%;
+  h1{
     text-align: center;
+    letter-spacing: 40px;
   }
-  video{
-    margin-top: 100px;
+  h2{
+    font-size: 32px;
+    color: #2A2A2A;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+  }
+  #No{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100px;
+  }
+  #description{
+    width: 550px;
+    align-self: center;
+    height: 500px;
+    margin-top: 50px;
+  }
+  #text{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .desc{
+    margin-right: 20px;
+  }
+  #size{
+    padding: 15px;
+    border: 1px solid #3131319d;
+  }
+  #size:hover{
+    background-color: #2A2A2A;
+    color: white;
+  }
+  h5{
+    font-size: 20px;
+    color: #3131319d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   #two-piece{
     display: flex;
     position: relative;
     width: 100%;
-    margin:  50px auto;
+    margin:  10px auto;
     text-align: left;
     white-space: nowrap;
     overflow-x: auto;
@@ -59,20 +82,17 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
-  .see{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -50px;
+  h4{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   #box{
     margin-right: 20px;
     display: flex;
     flex-direction: column;
   }
-  h2{
-    text-align: center;
-    margin-bottom: -20px;
-  }
+  
   .za{
     background-image: url(/Phanny-Brand/img/zaa.png);
     width: 300px;
@@ -108,8 +128,9 @@ body {
     width: 300px;
     height: 400px;
   }
-
-  #logoo{
+  
+  
+  #logo{
     background-image: url(/Phanny-Brand/img/lo.png);
     width: 41px;
     height: 47px;
@@ -152,49 +173,72 @@ body {
     margin-top: 20px;
   }
 
-
-  @media screen and (max-width: 900px) {
-    video{
-      width: 400px;
+  @media screen and (max-width: 1000px) {
+    body{
+      padding: 0 5px;
+    }
+    #img{
+      margin: auto;
+    }
+    #description{
+      margin: auto;
     }
   }
-  @media screen and (max-width: 700px) {
-    header h1 {
-      font-size: 60px;
+
+  @media screen and (max-width: 630px) {
+    body{
+      padding: 0;
+      margin: 0;
     }
-    video{
-      margin-top: 50px;
+    #img{
+      background-image: url(/Phanny-Brand/img/miniIMG.png);
+      width: 287px;
+      height: 305px;
+    }
+    h2{
+      font-size: 20px;
+      text-align: center;
+    }
+    #No{
+      font-size: 20px;
+      text-align: center;
+    }
+    #text{
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+    }
+    
+    h1{
+      font-size: 20px;
+      margin: auto;
+      text-align: center;
+    }
+    #description{
+      height: 600px;
+    }
+    h4{
+      text-align: center;
     }
   }
   @media screen and (max-width: 500px) {
-    header h1 {
-      font-size: 40px;
-      letter-spacing: 20px;
-    }
-    header.small h1 {
-      font-size: 20px;
-    }
-    video{
-      margin-top: 30px;
-    }
     #line{
       width: 250px;
     }
     #fade{
       display: none;
     }
-    video{
-      width: 300px;
+
+  }
+  @media screen and (max-width: 370px) {
+    h4{
+      margin-top: 100px;
     }
-    #social{
-      flex-direction: column;
+    h1{
+      font-size: 15px;
+    }
+    main{
       text-align: center;
     }
-    body{
-      padding: 0 1px;
-    }
-    #menu{
-      margin: 0;
-    }
+
   }
-  
